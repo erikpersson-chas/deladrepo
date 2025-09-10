@@ -9,6 +9,7 @@
 *  {
     color: #111111;
     font-family: 'Asimovian', sans-serif;
+
 }
 
 .maincontainer {
@@ -18,37 +19,39 @@
     padding: 20px;
     display: grid;
     grid-template-areas: 
-    "header "header"
-    "menu" "ContentOmmig"
-    "footer" "footer" ;
+    "Header" "Header"
+    "Menu" "Content-OmMig"
+    "Footer" "Footer";
     grid-template-columns: 1fr 3fr;
+    width: 100%;
+}
+.maincontainer > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
 }
 
-.header {
-    grid-area: header;
+.maincontainer > div.Header {
+    grid-area: Header;
     background-color: #4CAF50;
     color: white;
     padding: 10px 0;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    border: 10px solid #600;
 }
-.menu {
-    grid-area: menu;
+.maincontainer > div.Menu {
+    grid-area: Menu;
     background-color: #f4f4f4;
     padding: 15px;
     border-right: 1px solid #ddd;
-    border: 10px solid #600;
 }
-.content-ommig {
-    grid-area: ContentOmmig;
+.maincontainer > div.Content-OmMig{
+    grid-area: Content-OmMig;
     padding: 15px;
-    border: 10px solid #600;
 }
 
-.footer {
-    grid-area: footer;
+.maincontainer > div.Footer {
+    grid-area: Footer;
     background-color: #4CAF50;
     color: white;
     text-align: center;
@@ -57,5 +60,4 @@
     bottom: 0;
     width: 100%;
     font-size: 14px;
-    border: 10px solid #600;
 }
