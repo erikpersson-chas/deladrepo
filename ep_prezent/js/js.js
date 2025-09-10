@@ -38,7 +38,7 @@ const main = create_el("main");
 main.id = "main";
 add_classes(main, "");
 
-const main_p1 = create_el("p");
+const main_p1 = create_el("code");
 main_p1.innerHTML = "echo -e \"inga gäris bara habbar\" >> sysloggen # de e för tjejorna från södra latin som vi göre för";
 add_classes(main_p1, "");
 
@@ -49,7 +49,7 @@ footer.id = "footer";
 add_classes(footer, "");
 
 const footer_p1 = create_el("p");
-footer_p1.innerHTML = "&copy Erik Persson";
+footer_p1.innerHTML = "&copy epc";
 add_classes(footer_p1, "");
 
 footer.appendChild(footer_p1);
